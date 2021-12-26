@@ -8,7 +8,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends,postgresql_psycopg2',
         'NAME': 'pybo',
-        'USER': 'Database-1',
+        'USER': 'dbmasteruser',
         'PASSWORD': 'VPzeQKD4De0WwbX+2W(R?PN`KOUpAAHG',
         'HOST': 'ls-a9c73b1d47e0286622fb5bbae69cfa6a15a6002e.ckgdtqvxpuki.ap-northeast-2.rds.amazonaws.com',
         'PORT': '5432',
