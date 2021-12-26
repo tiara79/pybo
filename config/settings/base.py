@@ -168,6 +168,10 @@ LOGGING = {
             'handlers': ['console', 'mail_admins', 'file'],
             'level': 'INFO',
         },
+        'pybo': {
+            'handlers': ['console', 'file'],
+            'level': 'INFO',
+        },
         'django.server': {
             'handlers': ['django.server'],
             'level': 'INFO',

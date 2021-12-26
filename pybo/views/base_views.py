@@ -5,6 +5,9 @@ from django.shortcuts import render, get_object_or_404
 from ..models import Question
 # [21-12-16] 검색의 or 조건을 사용 하는 장고의 Q함수
 from django.db.models import Q, Count
+import logging
+
+logger = logging.getLogger('pybo')
 
 # [21-12-15] views.py 파일 분리
 def index(request):
@@ -18,6 +21,8 @@ def index(request):
     kw = request.GET.get('kw', '')
     # [21-12-16] 정렬 기준
     so = request.GET.get('so', 'recent')
+    # [21-12-26] pybo 로거 생성
+    logger.info("INFO 레벨로 출력")
 
     # 정렬
     if so == 'recommend':
